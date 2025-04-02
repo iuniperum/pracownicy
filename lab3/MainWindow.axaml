@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="lab3.MainWindow"
+        x:DataType="local:MainWindow"
+        Title="lab3">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="1" Width="200" Grid.Column="2" Margin="5" HorizontalAlignment="Center" Click="klik" Content="Dodaj" HorizontalContentAlignment="Center" Padding="20"/>
+        <Button Grid.Row="2" Width="200" Grid.Column="2" Margin="5" HorizontalAlignment="Center" Click="klik" Content="Usuń" HorizontalContentAlignment="Center" Padding="20"/>
+        <DataGrid x:Name="zbior_pracownikow" 
+                  Grid.Row="0" 
+                  ItemsSource="{Binding pracownicy}" 
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding _id}"/>
+                <DataGridTextColumn Header="IMIE" Binding="{Binding _imie}"/>
+                <DataGridTextColumn Header="NAZW" Binding="{Binding _nazwisko}"/>
+                <DataGridTextColumn Header="WIEK" Binding="{Binding _wiek}"/>
+                <DataGridTextColumn Header="STAN" Binding="{Binding _stanowisko}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="5" Width="200" Grid.Column="0" Margin="5" HorizontalAlignment="Center" Click="klik" Content="Zapis do .csv" HorizontalContentAlignment="Center" Padding="20"/>
+        <Button Grid.Row="5" Width="200" Grid.Column="1" Margin="5" HorizontalAlignment="Center" Click="klik" Content="Odczyt z .csv" HorizontalContentAlignment="Center" Padding="20"/>
+
+    </Grid>
+</Window>

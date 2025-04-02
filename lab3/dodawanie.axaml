@@ -1,0 +1,54 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="lab3.dodawanie"
+        Title="dodawanie">
+        <Grid>
+                <Grid.RowDefinitions >
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBox  Grid.Row="0" Grid.Column="0" x:Name="IMIE" Watermark="IMIĘ" ></TextBox>
+                <TextBlock Grid.Row="0" Grid.Column="1" Margin="0 5" TextAlignment="Center" >Imię</TextBlock>
+                <TextBox Grid.Row="1" Grid.Column="0" x:Name="NAZWISKO" Watermark="NAZWISKO"></TextBox>
+                <TextBlock Grid.Row="1" Grid.Column="1" Margin="0 5" TextAlignment="Center" >Nazwisko</TextBlock>
+                <TextBox Grid.Row="2" Grid.Column="0" x:Name="WIEK" Watermark="WIEK"></TextBox>
+                <TextBlock Grid.Row="2" Grid.Column="1" Margin="0 5" TextAlignment="Center" >Wiek</TextBlock>
+                
+                <ComboBox Grid.Row="3" Grid.Column="0" Width="300" x:Name="STANOWISKA" HorizontalAlignment="Center" SelectionChanged="wybor_stanowiska">
+                        <ComboBoxItem>
+                                <StackPanel>
+                                        <TextBlock Text="dyrektor"/>
+                                </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                                <StackPanel>
+                                        <TextBlock Text="menadżer"/>
+                                </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                                <StackPanel>
+                                        <TextBlock Text="asystent"/>
+                                </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                                <StackPanel>
+                                        <TextBlock Text="sekretarka"/>
+                                </StackPanel>
+                        </ComboBoxItem>
+                </ComboBox>
+                <TextBlock Grid.Row="3" Grid.Column="1" Margin="0 5" TextAlignment="Center" >Stanowisko</TextBlock>
+                
+                <Button Grid.Row="4" Width="200" Grid.Column="0" Margin="5" HorizontalAlignment="Center" Content="Zatwierdź" Click="dodanie_pracownika" HorizontalContentAlignment="Center" Padding="20"/>
+                <Button Grid.Row="4" Width="200" Grid.Column="1" Margin="5" HorizontalAlignment="Center" Content="Anuluj" HorizontalContentAlignment="Center" Padding="20"/>
+        </Grid>
+</Window>
