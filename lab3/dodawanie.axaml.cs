@@ -35,10 +35,9 @@ public partial class dodawanie : Window
 
     private void dodanie_pracownika(object sender, RoutedEventArgs args)
     {
-        pracownik nowy_pracownik = new pracownik
-        {
-            _imie = IMIE.Text, _nazwisko = NAZWISKO.Text, _wiek = WIEK.Text, _stanowisko = wybrane_stanowisko
-            
+        main_window.liczba_pracownikow += 1;
+        pracownik nowy_pracownik = new pracownik {
+            _id = main_window.liczba_pracownikow, _imie = IMIE.Text, _nazwisko = NAZWISKO.Text, _wiek = WIEK.Text, _stanowisko = wybrane_stanowisko
         }; Close(nowy_pracownik);
     }
 }

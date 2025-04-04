@@ -20,7 +20,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         InitializeComponent();
         DataContext = this;
     }
-    private int liczba_pracownikow = 0;
+    public int liczba_pracownikow = 0;
 
     public event PropertyChangedEventHandler PropertyChanged;
 
@@ -28,27 +28,22 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 
-    private async void klik(object sender, RoutedEventArgs e) {
-        if (sender is Button button) {
-            if (button.Content.ToString() == "Dodaj") {
-                
-                
-                dodawanie dod = new dodawanie(this);
-                var result = await dod.ShowDialog<pracownik>(this); {
-                    pracownicy.Add(result);
-                }
-                
-            }
-            if (button.Content.ToString() == "Usuń") {
-                
-            }
-            if (button.Content.ToString() == "Zapis do .csv") {
-                
-            }
-            if (button.Content.ToString() == "Odczyt z .csv") {
-                
-            }
+    private async void dodaj(object sender, RoutedEventArgs e) { 
+        dodawanie dod = new dodawanie(this);
+        var result = await dod.ShowDialog<pracownik>(this); { 
+            pracownicy.Add(result);
         }
+    }
+    private async void usun(object sender, RoutedEventArgs e) {
+        if (zbior_pracownikow.SelectedItem is pracownik wybrany) {
+            pracownicy.Remove(wybrany);
+        }
+    }
+    private async void zapiscsv(object sender, RoutedEventArgs e) {
+        
+    }
+    private async void odczytcsv(object sender, RoutedEventArgs e) {
+        
     }
 } 
 
