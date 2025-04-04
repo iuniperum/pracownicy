@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "pBzipis3euw=",
-  "success": false,
+  "dgSpecHash": "gGmuJ1Ulki4=",
+  "success": true,
   "projectFilePath": "/home/hoda/RiderProjects/lab3/lab3/lab3.csproj",
   "expectedPackageFiles": [
     "/home/hoda/.nuget/packages/avalonia/11.2.1/avalonia.11.2.1.nupkg.sha512",
@@ -14,13 +14,14 @@
     "/home/hoda/.nuget/packages/avalonia.fonts.inter/11.2.1/avalonia.fonts.inter.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.freedesktop/11.2.1/avalonia.freedesktop.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.native/11.2.1/avalonia.native.11.2.1.nupkg.sha512",
-    "/home/hoda/.nuget/packages/avalonia.reactiveui/11.2.6/avalonia.reactiveui.11.2.6.nupkg.sha512",
+    "/home/hoda/.nuget/packages/avalonia.reactiveui/11.2.1/avalonia.reactiveui.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.remote.protocol/11.2.1/avalonia.remote.protocol.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.skia/11.2.1/avalonia.skia.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.themes.fluent/11.2.1/avalonia.themes.fluent.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.themes.simple/11.2.1/avalonia.themes.simple.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.win32/11.2.1/avalonia.win32.11.2.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/avalonia.x11/11.2.1/avalonia.x11.11.2.1.nupkg.sha512",
+    "/home/hoda/.nuget/packages/dialoghost.avalonia/0.9.2/dialoghost.avalonia.0.9.2.nupkg.sha512",
     "/home/hoda/.nuget/packages/dynamicdata/8.4.1/dynamicdata.8.4.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/harfbuzzsharp/7.3.0.2/harfbuzzsharp.7.3.0.2.nupkg.sha512",
     "/home/hoda/.nuget/packages/harfbuzzsharp.nativeassets.linux/7.3.0.2/harfbuzzsharp.nativeassets.linux.7.3.0.2.nupkg.sha512",
@@ -40,15 +41,5 @@
     "/home/hoda/.nuget/packages/system.reactive/6.0.1/system.reactive.6.0.1.nupkg.sha512",
     "/home/hoda/.nuget/packages/tmds.dbus.protocol/0.20.0/tmds.dbus.protocol.0.20.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Avalonia from 11.2.6 to 11.2.1. Reference the package directly from the project to select a different version. \n lab3 -> Avalonia.ReactiveUI 11.2.6 -> Avalonia (>= 11.2.6) \n lab3 -> Avalonia (>= 11.2.1)",
-      "libraryId": "Avalonia",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

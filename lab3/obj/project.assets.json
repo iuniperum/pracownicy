@@ -235,10 +235,10 @@
           }
         }
       },
-      "Avalonia.ReactiveUI/11.2.6": {
+      "Avalonia.ReactiveUI/11.2.1": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.2.6",
+          "Avalonia": "11.2.1",
           "ReactiveUI": "20.1.1",
           "System.Reactive": "6.0.1"
         },
@@ -351,6 +351,22 @@
         },
         "runtime": {
           "lib/net8.0/Avalonia.X11.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DialogHost.Avalonia/0.9.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/DialogHost.Avalonia.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/DialogHost.Avalonia.dll": {
             "related": ".xml"
           }
         }
@@ -996,15 +1012,15 @@
         "runtimes/osx/native/libAvaloniaNative.dylib"
       ]
     },
-    "Avalonia.ReactiveUI/11.2.6": {
-      "sha512": "U45px6NRdMxOPSsUVkTgjripRJQ2EUiGYit0MkZTBcX/hk2CsQbUhw/i9OYW7ofVz5YlVi3rUhzwXqe7fzLo1A==",
+    "Avalonia.ReactiveUI/11.2.1": {
+      "sha512": "SgjmPrkpAyxnG9z9Ms1Nj53xTvD2W00GQ0w+WGMrt3Jm8UNHha8b0LK1Gx9WT4Do/ggH51j76RfRdXchbardWw==",
       "type": "package",
-      "path": "avalonia.reactiveui/11.2.6",
+      "path": "avalonia.reactiveui/11.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.reactiveui.11.2.6.nupkg.sha512",
+        "avalonia.reactiveui.11.2.1.nupkg.sha512",
         "avalonia.reactiveui.nuspec",
         "lib/net6.0/Avalonia.ReactiveUI.dll",
         "lib/net6.0/Avalonia.ReactiveUI.xml",
@@ -1120,6 +1136,21 @@
         "lib/net8.0/Avalonia.X11.xml",
         "lib/netstandard2.0/Avalonia.X11.dll",
         "lib/netstandard2.0/Avalonia.X11.xml"
+      ]
+    },
+    "DialogHost.Avalonia/0.9.2": {
+      "sha512": "QU5LH8Q/7uWYHcqnFiEpezHG6Zg+Gy7zhKMCrI3wIo1twNotGzCjmih/GGxFmmq1eyzBIkxNtOn7RuH/i7QqCA==",
+      "type": "package",
+      "path": "dialoghost.avalonia/0.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dialoghost.avalonia.0.9.2.nupkg.sha512",
+        "dialoghost.avalonia.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/DialogHost.Avalonia.dll",
+        "lib/netstandard2.0/DialogHost.Avalonia.xml"
       ]
     },
     "DynamicData/8.4.1": {
@@ -1737,8 +1768,9 @@
       "Avalonia.Desktop >= 11.2.1",
       "Avalonia.Diagnostics >= 11.2.1",
       "Avalonia.Fonts.Inter >= 11.2.1",
-      "Avalonia.ReactiveUI >= 11.2.6",
-      "Avalonia.Themes.Fluent >= 11.2.1"
+      "Avalonia.ReactiveUI >= 11.2.1",
+      "Avalonia.Themes.Fluent >= 11.2.1",
+      "DialogHost.Avalonia >= 0.9.2"
     ]
   },
   "packageFolders": {
@@ -1806,11 +1838,15 @@
           },
           "Avalonia.ReactiveUI": {
             "target": "Package",
-            "version": "[11.2.6, )"
+            "version": "[11.2.1, )"
           },
           "Avalonia.Themes.Fluent": {
             "target": "Package",
             "version": "[11.2.1, )"
+          },
+          "DialogHost.Avalonia": {
+            "target": "Package",
+            "version": "[0.9.2, )"
           }
         },
         "imports": [
@@ -1832,16 +1868,5 @@
         "runtimeIdentifierGraphPath": "/home/hoda/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Avalonia from 11.2.6 to 11.2.1. Reference the package directly from the project to select a different version. \n lab3 -> Avalonia.ReactiveUI 11.2.6 -> Avalonia (>= 11.2.6) \n lab3 -> Avalonia (>= 11.2.1)",
-      "libraryId": "Avalonia",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

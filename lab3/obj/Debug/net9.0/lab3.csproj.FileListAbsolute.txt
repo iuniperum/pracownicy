@@ -64,3 +64,10 @@
 /home/hoda/RiderProjects/lab3/lab3/obj/Debug/net9.0/lab3.csproj.Up2Date
 /home/hoda/RiderProjects/lab3/lab3/obj/Debug/net9.0/lab3.genruntimeconfig.cache
 /home/hoda/RiderProjects/lab3/lab3/obj/Debug/net9.0/ref/lab3.dll
+/home/hoda/RiderProjects/lab3/lab3/obj/Debug/net9.0/lab3.sourcelink.json
+/home/hoda/RiderProjects/lab3/lab3/bin/Debug/net9.0/Avalonia.ReactiveUI.dll
+/home/hoda/RiderProjects/lab3/lab3/bin/Debug/net9.0/DialogHost.Avalonia.dll
+/home/hoda/RiderProjects/lab3/lab3/bin/Debug/net9.0/DynamicData.dll
+/home/hoda/RiderProjects/lab3/lab3/bin/Debug/net9.0/ReactiveUI.dll
+/home/hoda/RiderProjects/lab3/lab3/bin/Debug/net9.0/Splat.dll
+/home/hoda/RiderProjects/lab3/lab3/bin/Debug/net9.0/System.Reactive.dll
