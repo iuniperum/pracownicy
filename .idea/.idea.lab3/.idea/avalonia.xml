@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="lab3/App.axaml" value="lab3/lab3.csproj" />
         <entry key="lab3/MainWindow.axaml" value="lab3/lab3.csproj" />
         <entry key="lab3/dodawanie.axaml" value="lab3/lab3.csproj" />
         <entry key="lab3/pracownik.axaml" value="lab3/lab3.csproj" />
