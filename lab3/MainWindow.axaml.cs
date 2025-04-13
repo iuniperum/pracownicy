@@ -66,6 +66,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
                         _id = Convert.ToInt32(dane[0]), _imie = dane[1], _nazwisko = dane[2], _wiek = dane[3],
                         _stanowisko = dane[4]
                     };
+                    pracownicy.Add(nowy_pracownik);
                 }
             }
         }
